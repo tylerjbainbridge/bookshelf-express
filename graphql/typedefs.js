@@ -7,7 +7,7 @@ const typeDefinitions = `
   type Query {
     hello: String
     todos: [Todo]
-    todo(id: Int!): Todo
+    todo(id: Int, content: String): Todo
   }
   schema {
     query: Query

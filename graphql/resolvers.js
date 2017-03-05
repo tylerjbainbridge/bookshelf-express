@@ -9,15 +9,13 @@ const resolvers = {
     todos(root, args, context) {
       return new Promise((resolve, reject) => {
         Todo.fetchAll().then((collection) => {
-          console.log(collection);
           resolve(collection.models.map((model) => model.attributes));
         }).catch((err) => reject(err));
       });
     },
     todo(root, args, context) {
       return new Promise((resolve, reject) => {
-        Todo.where({ id: args.id }).fetch().then((todo) => {
-          console.log(todo.attributes);
+        Todo.where(args).fetch().then((todo) => {
           resolve(todo.attributes);
         }).catch((err) => reject(err));
       });
