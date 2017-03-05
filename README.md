@@ -43,7 +43,7 @@ node server
 ```
 
 ## To Test
-Head over to localhost:3000/graphiql to test the GraphQL endpint
+Head over to localhost:3000/graphiql to test the GraphQL endpoint
 
 query
 ```GraphQL
