@@ -9,7 +9,7 @@ yarn install
 
 2. Install knex globally
 ```bash
-npm install knex -g
+yarn global add knex
 ```
 
 3. Run migrations
@@ -29,9 +29,9 @@ knex seed:run
 
 ## To Run
 ### Development (With Nodemon watching)
-- Install nodemon globally (for developing)
+- Install nodemon globally
 ```bash
-npm install nodemon -g
+yarn global add nodemon
 ```
 - Start the server
 ```bash
