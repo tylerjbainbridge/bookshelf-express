@@ -17,10 +17,10 @@ const schema = makeExecutableSchema({
 });
 
 // test query
-// const query = 'query { hello }';
-// graphql(schema, query).then((result) => {
-//   console.log(JSON.stringify(result, null, "  "));
-// });
+const query = 'query { hello }';
+graphql(schema, query).then((result) => {
+  console.log(JSON.stringify(result, null, "  "));
+});
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
