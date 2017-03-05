@@ -47,9 +47,9 @@ Head over to localhost:3000/graphiql to test the GraphQL endpint
 
 query
 ```GraphQL
-  query {
-    hello
-  }
+query {
+  hello
+}
 ```
 
 response
@@ -63,37 +63,37 @@ response
 
 ### Samples
 ```GraphQL
-  query {
-    todos {
-      content
-      completed
-    }
+query {
+  todos {
+    content
+    completed
   }
+}
 ```
 
 ```GraphQL
-  query {
-    todo(id: 2) {
-      content
-    }
+query {
+  todo(id: 2) {
+    content
   }
+}
 ```
 
 ```GraphQL
-  mutation {
-    createTodo(content: "make graphql demo") {
-      id
-      content
-      completed
-    }
+mutation {
+  createTodo(content: "make graphql demo") {
+    id
+    content
+    completed
   }
+}
 ```
 
 ```GraphQL
-  mutation {
-    updateTodo(id: 2, completed: true) {
-      content
-      completed
-    }
+mutation {
+  updateTodo(id: 2, completed: true) {
+    content
+    completed
   }
+}
 ```
