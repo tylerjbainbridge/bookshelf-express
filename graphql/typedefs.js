@@ -3,6 +3,14 @@ const typeDefinitions = `
     id: ID
     content: String
     completed: Boolean
+    tasks: [Task]
+  }
+
+  type Task {
+    id: ID
+    content: String
+    completed: Boolean
+    todo_id: ID
   }
 
   type Query {

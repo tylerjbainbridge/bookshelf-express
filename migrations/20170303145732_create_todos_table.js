@@ -3,7 +3,7 @@ exports.up = (knex) => {
     table.increments('id').primary();
     table.string('content');
     table.boolean('completed').defaultTo(false);
-  })
+  });
 };
 
 exports.down = (knex) => {

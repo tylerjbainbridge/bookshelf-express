@@ -7,6 +7,9 @@ module.exports = {
       password : '',
       database : 'testDB',
     },
+    pool: {
+      max: 1
+    },
     migrations: {
       directory: './migrations',
       tableName: 'knex_migrations',
