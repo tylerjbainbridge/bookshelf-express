@@ -22,11 +22,6 @@ knex migrate:latest
 knex seed:run
 ```
 
-4. Seed the database
-```bash
-knex seed:run
-```
-
 ## To Run
 ### Development (With Nodemon watching)
 - Install nodemon globally
